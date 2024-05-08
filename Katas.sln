@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RunlengthEncoding.Tests", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RunlengthEncoding", "RunlengthEncoding\RunlengthEncoding.csproj", "{F719ADE8-23F1-4846-8134-ECBCC6943ADA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubarraySumEquals.Tests", "SubarraySumEquals.Tests\SubarraySumEquals.Tests.csproj", "{331BE7E9-06D2-4430-9E58-60113CF1CD61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubarraySumEquals", "SubarraySumEquals\SubarraySumEquals.csproj", "{F75AA967-91C1-4748-ADE1-F8E42555F59A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{F719ADE8-23F1-4846-8134-ECBCC6943ADA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F719ADE8-23F1-4846-8134-ECBCC6943ADA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F719ADE8-23F1-4846-8134-ECBCC6943ADA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{331BE7E9-06D2-4430-9E58-60113CF1CD61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{331BE7E9-06D2-4430-9E58-60113CF1CD61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{331BE7E9-06D2-4430-9E58-60113CF1CD61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{331BE7E9-06D2-4430-9E58-60113CF1CD61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F75AA967-91C1-4748-ADE1-F8E42555F59A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F75AA967-91C1-4748-ADE1-F8E42555F59A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F75AA967-91C1-4748-ADE1-F8E42555F59A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F75AA967-91C1-4748-ADE1-F8E42555F59A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
