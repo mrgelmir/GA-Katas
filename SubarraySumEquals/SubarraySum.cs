@@ -10,20 +10,27 @@ public static class SubarraySum
         if (input[0] == number)
             return input;
 
-        for (int startIndex = 0; startIndex < input.Count; startIndex++)
-        {
-            int sum = input[startIndex];
-            for (int i = startIndex+1; i < input.Count; i++)
-            {
-                sum += input[i];
+        if (input.Count == 1)
+            return [];
 
-                if (sum == number)
-                {
-                    return input[startIndex..(i + 1)];
-                }
-                
-                if(sum > number)
-                    break;
+        int start = 0;
+        int end = 0;
+        int sum = input[start];
+        
+        while (end < input.Count-1)
+        {
+            end += 1;
+            sum += input[end];
+
+            while (sum > number && start <= end)
+            {
+                sum -= input[start];
+                ++start;
+            }
+
+            if (sum == number)
+            {
+                return input[start..(end + 1)];
             }
         }
 

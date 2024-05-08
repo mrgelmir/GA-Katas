@@ -42,7 +42,7 @@ public class SubarraySumTests
 
         List<int> result = SubarraySum.Find(array, number);
 
-        Assert.Equal(result, array);
+        Assert.Equal(array, result);
     }
 
     [Fact]
@@ -88,5 +88,6 @@ public class SubarraySumTests
         yield return [9, new List<int> { 1, 2, 3, 4, 5 }, new List<int> { 2, 3, 4 }];
         yield return [8, new List<int> { 1, 1, 1, 1, 8 }, new List<int> { 8 }];
         yield return [8, new List<int> { 1, 1, 1, 1 }, new List<int>()];
+        yield return [5, new List<int> { 1, 1, 1, 1, 4 }, new List<int> { 1, 4 }];
     }
 }
