@@ -12,8 +12,8 @@ public static class SubarraySum
 
         for (int startIndex = 0; startIndex < input.Count; startIndex++)
         {
-            int sum = 0;
-            for (int i = startIndex; i < input.Count; i++)
+            int sum = input[startIndex];
+            for (int i = startIndex+1; i < input.Count; i++)
             {
                 sum += input[i];
 
