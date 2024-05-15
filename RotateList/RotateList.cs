@@ -8,10 +8,7 @@ public class RotateList
         if (rotations == 0)
             return;
 
-        if (rotations < 0)
-        {
-           rotations = list.Count + rotations;
-        }
+        rotations = SanitiseRotations(list.Count, rotations);
 
         for (int rotation = 0; rotation < rotations; ++rotation)
         {
@@ -24,5 +21,17 @@ public class RotateList
 
             list[^1] = start;
         }
+    }
+
+    private static int SanitiseRotations(int lenght, int rotations)
+    {
+        rotations %= lenght;
+
+        if (rotations < 0)
+        {
+            rotations = lenght + rotations;
+        }
+
+        return rotations;
     }
 }

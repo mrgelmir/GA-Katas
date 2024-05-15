@@ -25,6 +25,17 @@ public class RotateListTests
     }
 
     [Fact]
+    public void LenghtPlusOneRotations_Rotate_FirstShouldBeLast()
+    {
+        List<int> result = [0, 1, 2, 3, 4, 5, 6];
+        int start = result[0];
+
+        RotateList.Rotate(result, result.Count + 1);
+
+        Assert.Equal(start, result[^1]);
+    }
+
+    [Fact]
     public void FullLengthRotation_Rotate_ShouldEqualInput()
     {
         List<int> expected = [0, 1, 2, 3, 4, 5, 6];
@@ -42,6 +53,17 @@ public class RotateListTests
         int tail = result[^1];
 
         RotateList.Rotate(result, -1);
+
+        Assert.Equal(tail, result[0]);
+    }
+
+    [Fact]
+    public void LenghtPlusOneNegativeRotations_Rotate_EndShouldBeFirst()
+    {
+        List<int> result = [0, 1, 2, 3, 4, 5, 6];
+        int tail = result[^1];
+
+        RotateList.Rotate(result, -(result.Count + 1));
 
         Assert.Equal(tail, result[0]);
     }
