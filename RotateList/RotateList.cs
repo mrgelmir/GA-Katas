@@ -8,9 +8,9 @@ public class RotateList
         if (rotations == 0)
             return;
 
-        if (rotations > 0)
+        if (rotations < 0)
         {
-            for (int rotation = 0; rotation < rotations; ++rotation)
+            for (int rotation = 0; rotation < -rotations; ++rotation)
             {
                 int tail = list[^1];
 
@@ -24,7 +24,7 @@ public class RotateList
         }
         else
         {
-            for (int rotation = 0; rotation < -rotations; ++rotation)
+            for (int rotation = 0; rotation < rotations; ++rotation)
             {
                 int start = list[0];
 
