@@ -4,6 +4,40 @@ public static class IntExtensions
 {
     public static int Reverse(this int input)
     {
+        return CheckedModulo(input);
+        // return StringReverse(input);
+    }
+
+    private static int CheckedModulo(int input)
+    {
+        int sign = Math.Sign(input);
+        input = Math.Abs(input);
+
+        int output = 0;
+        while (input > 0)
+        {
+            int current = input % 10;
+            input /= 10;
+            
+            try
+            {
+                checked
+                {
+                    output *= 10;
+                    output += current;
+                }
+            }
+            catch (OverflowException)
+            {
+                return 0;
+            }
+        }
+        
+        return output * sign;
+    }
+
+    private static int StringReverse(int input)
+    {
         bool negative = input < 0;
 
         input = Math.Abs(input);
