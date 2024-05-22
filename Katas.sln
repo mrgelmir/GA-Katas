@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RotateList", "RotateList\Ro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RotateList.Tests", "RotateList.Tests\RotateList.Tests.csproj", "{95469608-5FB0-43DF-A4FB-7C9FAB681100}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseInteger", "ReverseInteger\ReverseInteger.csproj", "{44BE950F-CD62-487B-A134-A4A67CCEA0EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseInteger.Tests", "ReverseInteger.Tests\ReverseInteger.Tests.csproj", "{32DB45AC-9A79-482D-82D9-97DD8317FBAB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{95469608-5FB0-43DF-A4FB-7C9FAB681100}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95469608-5FB0-43DF-A4FB-7C9FAB681100}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95469608-5FB0-43DF-A4FB-7C9FAB681100}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44BE950F-CD62-487B-A134-A4A67CCEA0EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44BE950F-CD62-487B-A134-A4A67CCEA0EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44BE950F-CD62-487B-A134-A4A67CCEA0EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44BE950F-CD62-487B-A134-A4A67CCEA0EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32DB45AC-9A79-482D-82D9-97DD8317FBAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32DB45AC-9A79-482D-82D9-97DD8317FBAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32DB45AC-9A79-482D-82D9-97DD8317FBAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32DB45AC-9A79-482D-82D9-97DD8317FBAB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
