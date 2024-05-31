@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseInteger", "ReverseIn
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseInteger.Tests", "ReverseInteger.Tests\ReverseInteger.Tests.csproj", "{32DB45AC-9A79-482D-82D9-97DD8317FBAB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PointInsidePolygon", "PointInsidePolygon\PointInsidePolygon.csproj", "{BC1CFA8A-71ED-43BD-82A6-19EB27101BCB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PointInsidePolygon.Tests", "PointInsidePolygon.Tests\PointInsidePolygon.Tests.csproj", "{A154D01D-2635-4851-B450-9A942846A348}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +61,14 @@ Global
 		{32DB45AC-9A79-482D-82D9-97DD8317FBAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{32DB45AC-9A79-482D-82D9-97DD8317FBAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{32DB45AC-9A79-482D-82D9-97DD8317FBAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC1CFA8A-71ED-43BD-82A6-19EB27101BCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC1CFA8A-71ED-43BD-82A6-19EB27101BCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC1CFA8A-71ED-43BD-82A6-19EB27101BCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC1CFA8A-71ED-43BD-82A6-19EB27101BCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A154D01D-2635-4851-B450-9A942846A348}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A154D01D-2635-4851-B450-9A942846A348}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A154D01D-2635-4851-B450-9A942846A348}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A154D01D-2635-4851-B450-9A942846A348}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
