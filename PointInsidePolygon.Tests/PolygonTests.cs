@@ -45,6 +45,39 @@ public class PolygonTests
         Assert.False(result);
     }
 
+    [Fact]
+    public void PointOnVertex_IsInside_IsFalse()
+    {
+        Point sharedVertex = (0, 0);
+        Polygon polygon = new(sharedVertex, (0, 1), (1, 0));
+
+        bool result = polygon.IsInside(sharedVertex);
+
+        Assert.False(result);
+    }
+
+    [Fact]
+    public void PointOnVerticalEdge_IsInside_IsFalse()
+    {
+        Point edgePoint = (0, .5);
+        Polygon polygon = new((0, 0), (0, 1), (1, 0));
+
+        bool result = polygon.IsInside(edgePoint);
+
+        Assert.False(result);
+    }
+
+    [Fact]
+    public void PointOnHorizontalEdge_IsInside_IsFalse()
+    {
+        Point edgePoint = (.5, 0);
+        Polygon polygon = new((0, 0), (0, 1), (1, 0));
+
+        bool result = polygon.IsInside(edgePoint);
+
+        Assert.False(result);
+    }
+
     // TODO:
     // - validation with more difficult shapes
     // - edge and border cases (point collisions)

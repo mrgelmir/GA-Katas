@@ -28,54 +28,16 @@ public class Polygon
             Point p1 = points[i];
             Point p2 = points[(i + 1) % points.Length];
 
-            if (IsHorizontalLineIntersecting(p1, p2, point.Y, out _))
+            if (Lines.HorizontalIntersect(p1, p2, point.Y, out Point intersection))
             {
-                ++intersections;
+                if (intersection.X > point.X)
+                    ++intersections;
             }
         }
 
 
-        return intersections % 2 == 0;
+        return intersections % 2 != 0;
     }
-
-    private static bool IsHorizontalLineIntersecting(Point p1, Point p2, double horizontalY, out Point intersectionPoint)
-    {
-        intersectionPoint = (0, 0);
-
-        // Check if horizontalY is within the y-range of the line
-        if ((horizontalY < Math.Min(p1.Y, p2.Y)) || (horizontalY > Math.Max(p1.Y, p2.Y)))
-        {
-            return false;
-        }
-
-        // Calculate the slope and y-intercept of the line
-        double deltaY = p2.Y - p1.Y;
-        double deltaX = p2.X - p1.X;
-
-        if (deltaX == 0)
-        {
-            // The line is vertical, no intersection with horizontal line
-            return false;
-        }
-
-        double slope = deltaY / deltaX;
-        double yIntercept = p1.Y - slope * p1.X;
-
-        // Calculate the x-coordinate of the intersection point
-        double intersectionX = (horizontalY - yIntercept) / slope;
-
-        // Check if intersectionX is within the x-range of the line
-        if (intersectionX < Math.Min(p1.X, p2.X) || intersectionX > Math.Max(p1.X, p2.X))
-        {
-            return false;
-        }
-
-        // Set the intersection point
-        intersectionPoint = new Point(intersectionX, horizontalY);
-        return true;
-    }
-
-
 }
 
 public record Point(double X, double Y)
