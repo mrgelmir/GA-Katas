@@ -23,6 +23,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PointInsidePolygon", "Point
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PointInsidePolygon.Tests", "PointInsidePolygon.Tests\PointInsidePolygon.Tests.csproj", "{A154D01D-2635-4851-B450-9A942846A348}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatrixWordSearch", "MatrixWordSearch\MatrixWordSearch.csproj", "{2327E377-3469-4944-8921-1BE4B1983118}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatrixWordSearch.Tests", "MatrixWordSearch.Tests\MatrixWordSearch.Tests.csproj", "{949A7BA1-99BF-48AC-989F-F412F8508D32}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +73,14 @@ Global
 		{A154D01D-2635-4851-B450-9A942846A348}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A154D01D-2635-4851-B450-9A942846A348}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A154D01D-2635-4851-B450-9A942846A348}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2327E377-3469-4944-8921-1BE4B1983118}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2327E377-3469-4944-8921-1BE4B1983118}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2327E377-3469-4944-8921-1BE4B1983118}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2327E377-3469-4944-8921-1BE4B1983118}.Release|Any CPU.Build.0 = Release|Any CPU
+		{949A7BA1-99BF-48AC-989F-F412F8508D32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{949A7BA1-99BF-48AC-989F-F412F8508D32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{949A7BA1-99BF-48AC-989F-F412F8508D32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{949A7BA1-99BF-48AC-989F-F412F8508D32}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
