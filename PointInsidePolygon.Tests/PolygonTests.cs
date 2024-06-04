@@ -78,7 +78,52 @@ public class PolygonTests
         Assert.False(result);
     }
 
+    [Theory]
+    [InlineData(2.7, 3.8, true)]
+    [InlineData(3.75, 2.66, false)]
+    [InlineData(3.5, 5, false)]
+    public void Triangle_IsInside_Validation(double x, double y, bool expected)
+    {
+        Polygon triangle = new((2, 2), (6, 5), (2, 5));
+        Point point = new(x, y);
+
+        bool result = triangle.IsInside(point);
+
+        Assert.Equal(expected, result);
+    }
+
+    [Theory]
+    [InlineData(1, 1, false)] // Corner
+    [InlineData(3.6, 2, true)]
+    [InlineData(3.4, 4.5, true)]
+    // [InlineData(4, 3, true)] // Inline with corners => edge gets counted double
+    [InlineData(1.5, 4, false)]
+    public void Polygon_IsInside_Validation(double x, double y, bool expected)
+    {
+        Polygon polygon = new Polygon((1, 1), (3, 3), (1, 6), (4, 6), (6, 3), (4, 1));
+        Point point = new(x, y);
+
+        bool result = polygon.IsInside(point);
+
+        Assert.Equal(expected, result);
+    }
+
+    [Theory]
+    [InlineData(7, 5, false)] // On border
+    [InlineData(7.7, 2.6, false)]
+    [InlineData(3.2, 4.6, true)]
+    [InlineData(2.22, 6.73, false)]
+    // [InlineData(.5, 6, false)] // Inline with a corner => edge gets counted double
+    public void IrregularPolygon_IsInside_Validation(double x, double y, bool expected)
+    {
+        Polygon polygon = new((0, 0), (2, 3), (1, 6), (5, 7), (8, 4), (7, 2), (4, 0));
+        Point point = new(x, y);
+
+        bool result = polygon.IsInside(point);
+
+        Assert.Equal(expected, result);
+    }
+
     // TODO:
-    // - validation with more difficult shapes
-    // - edge and border cases (point collisions)
+    // - edge and border cases (point collisions) (see commented out validations above)
 }

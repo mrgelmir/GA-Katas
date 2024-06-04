@@ -1,19 +1,11 @@
 ﻿
 namespace PointInsidePolygon;
 
-public class Polygon
+public class Polygon(params Point[] points)
 {
-    private readonly Point[] points;
-    private readonly Point min;
-    private readonly Point max;
-
-    public Polygon(params Point[] points)
-    {
-        this.points = points;
-
-        min = new(points.MinBy(p => p.X).X, points.MinBy(p => p.Y).Y);
-        max = new(points.MaxBy(p => p.X).X, points.MaxBy(p => p.Y).Y);
-    }
+    private readonly Point[] points = points;
+    private readonly Point min = new(points.MinBy(p => p.X).X, points.MinBy(p => p.Y).Y);
+    private readonly Point max = new(points.MaxBy(p => p.X).X, points.MaxBy(p => p.Y).Y);
 
     public bool IsInside(Point point)
     {
