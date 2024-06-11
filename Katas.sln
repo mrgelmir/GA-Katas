@@ -27,6 +27,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatrixWordSearch", "MatrixW
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatrixWordSearch.Tests", "MatrixWordSearch.Tests\MatrixWordSearch.Tests.csproj", "{949A7BA1-99BF-48AC-989F-F412F8508D32}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fibonacci", "Fibonnaci\Fibonacci.csproj", "{FDE66064-807B-41B4-8C5C-FCFF7CB1C588}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fibonacci.Tests", "Fibonacci.Tests\Fibonacci.Tests.csproj", "{199A0C02-6251-4009-BA52-7F84BF7E7450}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +85,14 @@ Global
 		{949A7BA1-99BF-48AC-989F-F412F8508D32}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{949A7BA1-99BF-48AC-989F-F412F8508D32}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{949A7BA1-99BF-48AC-989F-F412F8508D32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDE66064-807B-41B4-8C5C-FCFF7CB1C588}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDE66064-807B-41B4-8C5C-FCFF7CB1C588}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDE66064-807B-41B4-8C5C-FCFF7CB1C588}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDE66064-807B-41B4-8C5C-FCFF7CB1C588}.Release|Any CPU.Build.0 = Release|Any CPU
+		{199A0C02-6251-4009-BA52-7F84BF7E7450}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{199A0C02-6251-4009-BA52-7F84BF7E7450}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{199A0C02-6251-4009-BA52-7F84BF7E7450}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{199A0C02-6251-4009-BA52-7F84BF7E7450}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
