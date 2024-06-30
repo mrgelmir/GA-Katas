@@ -35,6 +35,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseDelimiters", "Revers
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseDelimiters.Tests", "ReverseDelimiters.Tests\ReverseDelimiters.Tests.csproj", "{86E4A9EF-1161-40BC-8548-B04126DF818B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConditionalReturn", "ConditionalReturn\ConditionalReturn.csproj", "{A7D428CB-961C-4EE2-B7ED-BD7587355CDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConditionalReturn.Tests", "ConditionalReturn.Tests\ConditionalReturn.Tests.csproj", "{9166B213-5846-4946-802A-347A1AB3B0FA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +109,14 @@ Global
 		{86E4A9EF-1161-40BC-8548-B04126DF818B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86E4A9EF-1161-40BC-8548-B04126DF818B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86E4A9EF-1161-40BC-8548-B04126DF818B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7D428CB-961C-4EE2-B7ED-BD7587355CDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7D428CB-961C-4EE2-B7ED-BD7587355CDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7D428CB-961C-4EE2-B7ED-BD7587355CDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7D428CB-961C-4EE2-B7ED-BD7587355CDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9166B213-5846-4946-802A-347A1AB3B0FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9166B213-5846-4946-802A-347A1AB3B0FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9166B213-5846-4946-802A-347A1AB3B0FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9166B213-5846-4946-802A-347A1AB3B0FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
