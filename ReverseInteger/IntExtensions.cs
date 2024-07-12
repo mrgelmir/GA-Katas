@@ -8,7 +8,7 @@ public static class IntExtensions
         // return StringReverse(input);
     }
 
-    private static int CheckedModulo(int input)
+    public static int CheckedModulo(int input)
     {
         int sign = Math.Sign(input);
         input = Math.Abs(input);
@@ -36,7 +36,7 @@ public static class IntExtensions
         return output * sign;
     }
 
-    private static int StringReverse(int input)
+    public static int StringReverse(int input)
     {
         bool negative = input < 0;
 
