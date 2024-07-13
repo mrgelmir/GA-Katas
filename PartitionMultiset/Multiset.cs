@@ -4,7 +4,31 @@ namespace PartitionMultiset;
 
 public static class Multiset
 {
-    public static bool Partition(List<int> input)
+    public static bool PartitionWithDP(IList<int> input)
+    {
+        int sum = input.Sum();
+        if (sum == 0 || sum % 2 != 0)
+            return false;
+
+        int targetSum = sum / 2;
+        BitArray solutions = new(targetSum + 1)
+        {
+            [0] = true
+        };
+
+        foreach (int number in input)
+        {
+            for (int i = targetSum; i >= number; i--)
+            {
+                solutions[i] = solutions[i] || solutions[i - number];
+            }
+        }
+
+
+        return solutions[targetSum];
+    }
+
+    public static bool PartitionWithBitArray(IList<int> input)
     {
         if (input.Count <= 1)
             return false;
