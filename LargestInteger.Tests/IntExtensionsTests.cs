@@ -59,3 +59,13 @@ public class StringImplementation1 : IntExtensionsTests
 {
     protected override int Execute(int[] input) => IntExtensions.StringImplementation1(input);
 }
+
+public class StringImplementation2 : IntExtensionsTests
+{
+    protected override int Execute(int[] input) => IntExtensions.StringImplementation2(input);
+}
+
+public class ModuloImplementation : IntExtensionsTests
+{
+    protected override int Execute(int[] input) => IntExtensions.ModuloImplementation(input);
+}
