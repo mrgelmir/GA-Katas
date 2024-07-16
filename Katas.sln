@@ -45,6 +45,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PartitionMultiset", "Partit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PartitionMultiset.Tests", "PartitionMultiset.Tests\PartitionMultiset.Tests.csproj", "{BA6F32DF-9077-4C3C-B39D-DE519D82944B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LargestInteger", "LargestInteger\LargestInteger.csproj", "{38BAD7E4-D4D8-4CCA-91AC-DA852E83704E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LargestInteger.Tests", "LargestInteger.Tests\LargestInteger.Tests.csproj", "{9B93C151-3775-4003-B90B-7BA51F6ECF00}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -135,6 +139,14 @@ Global
 		{BA6F32DF-9077-4C3C-B39D-DE519D82944B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA6F32DF-9077-4C3C-B39D-DE519D82944B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA6F32DF-9077-4C3C-B39D-DE519D82944B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38BAD7E4-D4D8-4CCA-91AC-DA852E83704E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38BAD7E4-D4D8-4CCA-91AC-DA852E83704E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38BAD7E4-D4D8-4CCA-91AC-DA852E83704E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38BAD7E4-D4D8-4CCA-91AC-DA852E83704E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B93C151-3775-4003-B90B-7BA51F6ECF00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B93C151-3775-4003-B90B-7BA51F6ECF00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B93C151-3775-4003-B90B-7BA51F6ECF00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B93C151-3775-4003-B90B-7BA51F6ECF00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
