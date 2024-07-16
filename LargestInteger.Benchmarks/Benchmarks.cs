@@ -7,24 +7,45 @@ namespace LargestInteger.Benchmarks
     [MemoryDiagnoser]
     public class LargestInteger
     {
-        readonly int[] input = [10, 7, 76, 415];
+        readonly int[][] inputs = [
+            [7, 76],
+            [3, 13],
+            [10, 7, 76, 415],
+            [14, 74, 8, 3, 64, 7]];
 
         [Benchmark(Baseline = true)]
         public void StringImplementation1()
         {
-            IntExtensions.StringImplementation1(input);
+            for (int i = 0; i < inputs.Length; ++i)
+                IntExtensions.StringImplementation1(inputs[i]);
         }
 
         [Benchmark]
         public void StringImplementation2()
         {
-            IntExtensions.StringImplementation2(input);
+            for (int i = 0; i < inputs.Length; ++i)
+                IntExtensions.StringImplementation2(inputs[i]);
         }
 
-        [Benchmark(Baseline = true)]
+        [Benchmark]
         public void ModuloImplementation()
         {
-            IntExtensions.ModuloImplementation(input);
+            for (int i = 0; i < inputs.Length; ++i)
+                IntExtensions.ModuloImplementation(inputs[i]);
+        }
+
+        [Benchmark]
+        public void ArrayImplementation()
+        {
+            for (int i = 0; i < inputs.Length; ++i)
+                IntExtensions.ArrayImplementation(inputs[i]);
+        }
+
+        [Benchmark]
+        public void ArrayImplementation_PrecomputedValues()
+        {
+            for (int i = 0; i < inputs.Length; ++i)
+                IntExtensions.ArrayImplementation_PrecomputedValues(inputs[i]);
         }
     }
 }
