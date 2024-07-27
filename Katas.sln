@@ -55,6 +55,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LookAndSay", "LookAndSay\Lo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LookAndSay.Tests", "LookAndSay.Tests\LookAndSay.Tests.csproj", "{3042F544-EC6E-488C-B5A7-5868E75DAD9C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PartitionMultiset.Benchmark", "PartitionMultiset.Benchmark\PartitionMultiset.Benchmark.csproj", "{315BA015-A872-47F3-8F02-E3C4B844B6C2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -165,6 +167,18 @@ Global
 		{3042F544-EC6E-488C-B5A7-5868E75DAD9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3042F544-EC6E-488C-B5A7-5868E75DAD9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3042F544-EC6E-488C-B5A7-5868E75DAD9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{315BA015-A872-47F3-8F02-E3C4B844B6C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{315BA015-A872-47F3-8F02-E3C4B844B6C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{315BA015-A872-47F3-8F02-E3C4B844B6C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{315BA015-A872-47F3-8F02-E3C4B844B6C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75050121-83E9-4D9C-83AA-FD8215D681BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75050121-83E9-4D9C-83AA-FD8215D681BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75050121-83E9-4D9C-83AA-FD8215D681BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75050121-83E9-4D9C-83AA-FD8215D681BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E82E3C3-0A83-4A1E-9D7B-EC212D08871A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E82E3C3-0A83-4A1E-9D7B-EC212D08871A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E82E3C3-0A83-4A1E-9D7B-EC212D08871A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E82E3C3-0A83-4A1E-9D7B-EC212D08871A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
