@@ -1,6 +1,6 @@
 namespace Palindrome.Tests;
 
-public class StringExtensionTests
+public abstract class StringExtensionTests
 {
     [Fact]
     public void SingleLetter_IsPalindrome()
@@ -61,4 +61,26 @@ public class StringExtensionTests
     {
         Assert.Equal(expected, input.IsPalindrome());
     }
+
+    protected abstract bool Execute(string input);
+}
+
+public class CursorTests : StringExtensionTests
+{
+    protected override bool Execute(string input) => input.IsPalindrome();
+}
+
+public class SmackTests : StringExtensionTests
+{
+    protected override bool Execute(string input) => StringExtensions.IsPalindrome_smack(input);
+}
+
+public class ChatGPTTests : StringExtensionTests
+{
+    protected override bool Execute(string input) => StringExtensions.IsPalindrome_ChatGPT(input);
+}
+
+public class ChatGPT2Tests : StringExtensionTests
+{
+    protected override bool Execute(string input) => StringExtensions.IsPalindrome_ChatGPT2(input);
 }
