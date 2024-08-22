@@ -1,3 +1,5 @@
+using FluentAssertions;
+
 namespace GridPaths.Tests;
 
 public abstract class TravelTests
@@ -7,7 +9,7 @@ public abstract class TravelTests
     {
         int pathCount = GetPathCount(1, 1);
 
-        Assert.Equal(1, pathCount);
+        pathCount.Should().Be(1);
     }
 
     [Fact]
@@ -15,7 +17,7 @@ public abstract class TravelTests
     {
         int pathCount = GetPathCount(100, 1);
 
-        Assert.Equal(1, pathCount);
+        pathCount.Should().Be(1);
     }
 
     [Fact]
@@ -23,7 +25,7 @@ public abstract class TravelTests
     {
         int pathCount = GetPathCount(1, 100);
 
-        Assert.Equal(1, pathCount);
+        pathCount.Should().Be(1);
     }
 
     [Fact]
@@ -31,7 +33,7 @@ public abstract class TravelTests
     {
         int pathCount = GetPathCount(2, 2);
 
-        Assert.Equal(2, pathCount);
+        pathCount.Should().Be(2);
     }
 
     [Theory]
@@ -42,7 +44,7 @@ public abstract class TravelTests
     {
         int pathCount = GetPathCount(gridWidth, gridHeight);
 
-        Assert.Equal(expected, pathCount);
+        pathCount.Should().Be(expected);
     }
 
     protected abstract int GetPathCount(int gridWidth, int gridHeight);
@@ -55,8 +57,8 @@ public class GridTests : TravelTests
         return Travel.GetPathCount_Grid(gridWidth, gridHeight);
     }
 }
-    
-public class ArrayTests:TravelTests
+
+public class ArrayTests : TravelTests
 {
     protected override int GetPathCount(int gridWidth, int gridHeight)
     {
