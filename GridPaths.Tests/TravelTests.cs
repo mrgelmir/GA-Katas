@@ -55,12 +55,19 @@ public class GridTests : TravelTests
         return Travel.GetPathCount_Grid(gridWidth, gridHeight);
     }
 }
-
-
+    
 public class ArrayTests:TravelTests
 {
     protected override int GetPathCount(int gridWidth, int gridHeight)
     {
         return Travel.GetPathCount_SingleArray(gridWidth, gridHeight);
+    }
+}
+
+public class GitAmend : TravelTests
+{
+    protected override int GetPathCount(int gridWidth, int gridHeight)
+    {
+        return (int)Travel.CountUniquePaths(gridWidth, gridHeight);
     }
 }

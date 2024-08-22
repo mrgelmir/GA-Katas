@@ -22,5 +22,12 @@ namespace GridPaths.Benchmark
             for (int i = 1; i <= iterations; ++i)
                 Travel.GetPathCount_SingleArray(i, i);
         }
+
+        [Benchmark(Description = "git-amend")]
+        public void GitAmend()
+        {
+            for (int i = 1; i <= iterations; ++i)
+                Travel.CountUniquePaths(i, i);
+        }
     }
 }
