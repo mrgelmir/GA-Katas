@@ -71,6 +71,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiceAndHoles", "MiceAndHole
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiceAndHoles.Tests", "MiceAndHoles.Tests\MiceAndHoles.Tests.csproj", "{4C48ED26-9EB6-4C76-92EA-A4F6F26065B0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GridPaths", "GridPaths\GridPaths.csproj", "{72F58C31-D1CE-45CE-A2AF-25DC51BF536E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GridPaths.Tests", "GridPaths.Tests\GridPaths.Tests.csproj", "{F9CC44DA-4C91-4B57-A9FD-0DFA2DDC7D26}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -213,6 +217,14 @@ Global
 		{4C48ED26-9EB6-4C76-92EA-A4F6F26065B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C48ED26-9EB6-4C76-92EA-A4F6F26065B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C48ED26-9EB6-4C76-92EA-A4F6F26065B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72F58C31-D1CE-45CE-A2AF-25DC51BF536E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72F58C31-D1CE-45CE-A2AF-25DC51BF536E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72F58C31-D1CE-45CE-A2AF-25DC51BF536E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72F58C31-D1CE-45CE-A2AF-25DC51BF536E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9CC44DA-4C91-4B57-A9FD-0DFA2DDC7D26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9CC44DA-4C91-4B57-A9FD-0DFA2DDC7D26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9CC44DA-4C91-4B57-A9FD-0DFA2DDC7D26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9CC44DA-4C91-4B57-A9FD-0DFA2DDC7D26}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
